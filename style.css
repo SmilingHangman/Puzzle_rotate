@@ -1,0 +1,64 @@
+.container {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 150px auto;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-image: linear-gradient(red, yellow);
+    /* background-image: url(./spycat300px.jpg); */
+    transition-duration: 0.5s;
+    text-align: center;
+}
+
+#squareOne {
+    background-image: url(./spycat300px.jpg);
+}
+
+#squareTwo {
+    background-image: url(./spycat300px.jpg);
+    background-position-x: -100px;
+}
+
+#squareThree {
+    background-image: url(./spycat300px.jpg);
+    background-position-x: -200px;
+}
+
+#squareFour {
+    background-image: url(./spycat300px.jpg);
+    background-position-y: -100px;
+}
+
+#squareFive {
+    background-image: url(./spycat300px.jpg);
+    background-position-x: -100px;
+    background-position-y: -100px;
+}
+
+#squareSix {
+    background-image: url(./spycat300px.jpg);
+    background-position-x: -200px;
+    background-position-y: -100px;
+}
+
+#squareSeven {
+    background-image: url(./spycat300px.jpg);
+    background-position-y: -200px;
+}
+
+#squareEight {
+    background-image: url(./spycat300px.jpg);
+    background-position-x: -100px;
+    background-position-y: -200px;
+}
+
+#squareNine {
+    background-image: url(./spycat300px.jpg);
+    background-position-x: -200px;
+    background-position-y: -200px;
+}
