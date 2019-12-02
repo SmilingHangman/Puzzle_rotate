@@ -18,11 +18,13 @@ document.getElementById("shuffle").addEventListener("click", function () {
     document.getElementById("squareNine").style.transform = "rotate(" + String((Math.floor(Math.random() * 10 + 1)) * 90) + "deg)";
 });
 
-let sqOne = document.getElementById("squareOne");
-let compSqOne = window.getComputedStyle(sqOne).getPropertyValue("transform");
-let rotator = parseInt(document.getElementById("squareOne").style.getPropertyValue('transform'), 10);
+// let sqOne = document.getElementById("squareOne");
+// let compSqOne = window.getComputedStyle(sqOne).getPropertyValue("transform");
+// let rotator = parseInt(document.getElementById("squareOne").style.getPropertyValue('transform'), 10);
+// let rotator = 0;
 document.getElementById("squareOne").addEventListener("click", function () {
-    document.getElementById("squareOne").style.transform = "rotate(" + String(rotator += 90) + "deg)";
+    document.getElementById("squareOne").style.transform += "rotate(90deg)";
+    // document.getElementById("squareOne").style.transform = "rotate(" + String(rotator += 90) + "deg)";
 });
 
 document.getElementById("squareTwo").addEventListener("click", function () {
