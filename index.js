@@ -2,11 +2,13 @@
 //     document.getElementsByClassName("rotate").style.transform = "rotate(90deg)"
 // }); iterate the array
 
-let rngRotator = Math.floor(((Math.random() * 3) + 5) * 90);
+// let rngRotator = Math.floor(((Math.random() * 3) + 5) * 90);
+// let rngRotator = ((Math.floor(Math.random() * 10 + 1)) * 90);
 
 document.getElementById("shuffle").addEventListener("click", function () {
-    document.getElementById("squareOne").style.transform = "rotate(" + String((Math.floor(Math.random() * 10 + 1)) * 90) + "deg)";
-    document.getElementById("squareTwo").style.transform = "rotate(" + String((Math.floor(Math.random() * 10 + 1)) * 90) + "deg)";
+    let rngRotator = ((Math.floor(Math.random() * 10 + 1)) * 90);
+    document.getElementById("squareOne").style.transform = "rotate(" + String(rngRotator) + "deg)";
+    document.getElementById("squareTwo").style.transform = "rotate(" + String(rngRotator) + "deg)";
     document.getElementById("squareThree").style.transform = "rotate(" + String((Math.floor(Math.random() * 10 + 1)) * 90) + "deg)";
     document.getElementById("squareFour").style.transform = "rotate(" + String((Math.floor(Math.random() * 10 + 1)) * 90) + "deg)";
     document.getElementById("squareFive").style.transform = "rotate(" + String((Math.floor(Math.random() * 10 + 1)) * 90) + "deg)";
@@ -16,8 +18,11 @@ document.getElementById("shuffle").addEventListener("click", function () {
     document.getElementById("squareNine").style.transform = "rotate(" + String((Math.floor(Math.random() * 10 + 1)) * 90) + "deg)";
 });
 
+let sqOne = document.getElementById("squareOne");
+let compSqOne = window.getComputedStyle(sqOne).getPropertyValue("transform");
+let rotator = parseInt(document.getElementById("squareOne").style.getPropertyValue('transform'), 10);
 document.getElementById("squareOne").addEventListener("click", function () {
-    document.getElementById("squareOne").style.transform += "rotate(90deg)";
+    document.getElementById("squareOne").style.transform = "rotate(" + String(rotator += 90) + "deg)";
 });
 
 document.getElementById("squareTwo").addEventListener("click", function () {

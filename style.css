@@ -17,6 +17,7 @@
 
 #squareOne {
     background-image: url(./spycat300px.jpg);
+    /* transform: rotate(180deg); */
 }
 
 #squareTwo {
